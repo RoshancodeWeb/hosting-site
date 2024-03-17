@@ -80,8 +80,8 @@ export default function App() {
 
             {data.map((value,index )=>{
                  return (
-                    <SwiperSlide >
-                    <div key={index} className='w-[90vw] md:w-[350px]  h-[400px]  relative left-[50%] translate-x-[-50%]   bg-white rounded p-5 mb-5 flex flex-col justify-between ' >
+                    <SwiperSlide key={index} >
+                    <div  className='w-[90vw] md:w-[350px]  h-[400px]  relative left-[50%] translate-x-[-50%]   bg-white rounded p-5 mb-5 flex flex-col justify-between ' >
                     <p className='w-full h-[30vh] text-lg text-[#4e4445] overflow-y-auto  '>{value.review}</p>
                     <div className='w-full h-fit flex items-center'>
                         <div className='w-fit h-fit rounded overflow-hidden mr-2'>
